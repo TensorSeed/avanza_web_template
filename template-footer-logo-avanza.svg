@@ -1,0 +1,14 @@
+<svg width="420" height="120" viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="120" fill="#F3F1ED"/>
+  <g fill="#9D7B3C">
+    <path d="M26 88L52 70V92H26V88Z"/>
+    <path d="M52 70L78 52V92H52V70Z"/>
+    <path d="M78 52L104 34V92H78V52Z"/>
+    <path d="M12 92H116V98H12V92Z"/>
+    <path d="M22 62L44 46L66 58L44 74L22 62Z"/>
+    <path d="M64 40L86 24L108 36L86 52L64 40Z"/>
+    <path d="M96 68L118 52L140 64L118 80L96 68Z"/>
+  </g>
+  <text x="150" y="78" fill="#9D7B3C" font-family="Roboto Condensed, Arial, sans-serif" font-size="48" font-weight="700">AVANZA</text>
+  <text x="152" y="102" fill="#9D7B3C" font-family="Roboto, Arial, sans-serif" font-size="14" letter-spacing="2">TECNOLOGIA INMOBILIARIA</text>
+</svg>

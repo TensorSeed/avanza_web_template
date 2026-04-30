@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="Avanza">
+        <img class="brand-logo" src="./logo-avanza-prueba.svg" alt="Avanza Tecnologia Inmobiliaria" />
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="nav-link is-active" href="#">Vende</a>
+        <a class="nav-link" href="#">Compra</a>
+        <a class="nav-link" href="#">Cotiza</a>
+        <a class="nav-link" href="#">¿Quiénes somos?</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="login-btn" href="#">Inicia sesión</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="hero">
+    <section class="hero-card">
+      <div class="hero-copy">
+        <h1>Vende tu casa en solo 9 días*</h1>
+        <p class="hero-note">*Consulta términos y condiciones.</p>
+        <p>
+          Recibe una oferta competitiva por tu propiedad, sin intermediarios y con un proceso
+          totalmente transparente de principio a fin.
+        </p>
+
+        <form class="hero-offer-form" action="#" method="get" aria-label="Formulario para recibir una oferta">
+          <label class="offer-input-wrap" for="hero-offer-input">
+            <span class="offer-dot" aria-hidden="true"></span>
+            <input
+              class="offer-input"
+              id="hero-offer-input"
+              name="direccion"
+              type="text"
+              placeholder="Escribe la dirección"
+            />
+          </label>
+          <button class="offer-btn" type="submit">Recibe una oferta</button>
+        </form>
+
+      </div>
+
+      <aside class="hero-visual" aria-label="Ilustración de casa para venta rápida">
+        <img src="./template-hero-vende-9dias.png" alt="Casa con llave para vender en nueve días" />
+      </aside>
+
+      <div class="hero-success-modal" aria-label="Mensaje sobre casos de éxito">
+        <span class="hero-success-label">Casos de éxito</span>
+        <strong>Nuestros casos de éxito no son casualidad:</strong>
+        <span>son el resultado de acompañar a cada cliente con compromiso y atención real.</span>
+      </div>
+    </section>
+  </main>
+
+  <section class="sell-process" aria-label="Cómo te compramos tu casa">
+    <div class="sell-process-card">
+      <header class="sell-process-header">
+        <p class="sell-process-kicker">No nacimos para repetir procesos, nacimos porque tu mereces algo diferente</p>
+        <h2 class="sell-process-title">Obtén una propuesta en línea en minutos, sin visitas ni llamadas.</h2>
+      </header>
+      <div class="coverage-visual" aria-label="Zonas de cobertura de Avanza">
+        <img src="./mexicoLow-pixels.svg" alt="Mapa de México con cobertura de Avanza" />
+        <div class="coverage-marker" aria-label="León, Guanajuato">
+          <span class="coverage-marker-label">León Gto</span>
+        </div>
+      </div>
+      <p class="coverage-note">Si tu inmueble no aparece aquí, cuéntanos el tipo de propiedad que quieres vender.</p>
+
+      <div class="sell-content">
+
+        <ol class="process-list">
+          <li class="process-item">
+            <img class="process-icon" src="./icon-step-01.svg" alt="Paso 01" />
+            <details class="process-disclosure">
+              <summary class="process-summary">
+                <strong class="process-title">Envíanos los datos de tu propiedad.</strong>
+                <img class="process-chevron" src="./icon-process-chevron.svg" alt="" aria-hidden="true" />
+              </summary>
+              <span class="process-description">Queremos conocer tu inmueble, saber su situación legal, conocerlo a través de fotos y poder hacerte una oferta justa.</span>
+            </details>
+          </li>
+          <li class="process-item">
+            <img class="process-icon" src="./icon-step-02.svg" alt="Paso 02" />
+            <details class="process-disclosure">
+              <summary class="process-summary">
+                <strong class="process-title">Recibe una oferta justa.</strong>
+                <img class="process-chevron" src="./icon-process-chevron.svg" alt="" aria-hidden="true" />
+              </summary>
+              <span class="process-description">Según los datos que nos brindaste, te haremos una oferta. La más atractiva del mercado.</span>
+            </details>
+          </li>
+          <li class="process-item">
+            <img class="process-icon" src="./icon-step-03.svg" alt="Paso 03" />
+            <details class="process-disclosure">
+              <summary class="process-summary">
+                <strong class="process-title">Firmemos</strong>
+                <img class="process-chevron" src="./icon-process-chevron.svg" alt="" aria-hidden="true" />
+              </summary>
+              <span class="process-description">Al llegar a un acuerdo justo, firmamos la venta de tu casa como uno de los pasos finales.</span>
+            </details>
+          </li>
+          <li class="process-item">
+            <img class="process-icon" src="./icon-step-04.svg" alt="Paso 04" />
+            <details class="process-disclosure">
+              <summary class="process-summary">
+                <strong class="process-title">Recibe tu dinero y entrega las llaves.</strong>
+                <img class="process-chevron" src="./icon-process-chevron.svg" alt="" aria-hidden="true" />
+              </summary>
+              <span class="process-description">El paso que todos esperábamos. Cobra tu casa y finalicemos felices.</span>
+            </details>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-band" aria-label="Información de contacto de Avanza">
+    <div class="contact-band-card">
+      <div class="contact-intro">
+        <h3>¿Necesitas ayuda?</h3>
+        <p>Estamos listos para ayudarte cuando lo necesites.</p>
+      </div>
+
+      <div class="contact-details">
+        <div class="contact-group contact-info">
+          <p class="contact-item contact-phone">477 893 8183</p>
+          <p class="contact-item"><span class="contact-icon">✉</span>contacto@avanzanexa.com</p>
+        </div>
+      </div>
+
+      <div class="contact-actions-panel">
+        <div class="contact-group contact-actions">
+          <a class="contact-cta" href="#">Chat en vivo</a>
+        </div>
+
+        <div class="contact-group contact-hours-group">
+          <p class="contact-hours">
+            <strong>Horario de atención</strong>
+            <span>Lunes a viernes de 9 a 5 pm</span>
+            <span>Línea 24 hrs</span>
+          </p>
+        </div>
+
+        <div class="contact-group contact-social">
+          <p class="contact-social-copy">
+            Síguenos en nuestras redes sociales<br />
+            <strong>Avanza Nexa</strong>
+          </p>
+          <div class="social-list" aria-label="Redes sociales">
+            <a class="social-pill" href="#" aria-label="Facebook"><img src="./icon-facebook.svg" alt="" /></a>
+            <a class="social-pill" href="#" aria-label="Instagram"><img src="./icon-instagram.svg" alt="" /></a>
+            <a class="social-pill" href="#" aria-label="TikTok"><img src="./icon-tiktok.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="services-grid" aria-label="Servicios principales de Avanza">
+    <div class="services-list">
+      <article class="service-card">
+        <figure class="service-visual">
+          <img src="./template-servicio-vende.jpg" alt="Casa lista para vender con Avanza" />
+        </figure>
+        <div class="service-body">
+          <h4>Vende tu casa en 9 días *</h4>
+          <p>Recibe una propuesta ágil y vende tu propiedad con acompañamiento experto.</p>
+          <a class="service-btn" href="#">Solicitar oferta</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <figure class="service-visual">
+          <img src="./template-servicio-compra.jpg" alt="Propiedad disponible para compra" />
+        </figure>
+        <div class="service-body">
+          <h4>Compra una casa</h4>
+          <p>Conoce propiedades seleccionadas para que encuentres la opción ideal para ti.</p>
+          <a class="service-btn" href="#">Propiedades disponibles</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <figure class="service-visual">
+          <img src="./template-servicio-invierte.jpg" alt="Inversión inmobiliaria con Avanza" />
+        </figure>
+        <div class="service-body">
+          <h4>Invierte con nosotros</h4>
+          <p>Accede a oportunidades inmobiliarias con enfoque en rentabilidad y crecimiento.</p>
+          <a class="service-btn" href="#">Como Invertir</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sell-benefits" aria-label="Beneficios de vender con Avanza Nexa">
+    <div class="sell-benefits-card">
+      <figure class="benefits-visual">
+        <img
+          src="./template-beneficios-vender.svg"
+          alt="Collage ilustrado de clientes vendiendo casa"
+        />
+      </figure>
+
+      <div class="benefits-content">
+        <h3>Somos Avanza</h3>
+        <p>
+          La nueva generación inmobiliaria en México.
+          Somos unión. Somos conexión. Somos revolución inmobiliaria.
+        </p>
+        <ul class="benefits-list">
+          <li class="benefits-item"><span class="benefits-check">✓</span>Respuesta comercial en tiempos competitivos.</li>
+          <li class="benefits-item"><span class="benefits-check">✓</span>Sin cargos ocultos ni condiciones inesperadas.</li>
+          <li class="benefits-item"><span class="benefits-check">✓</span>Proceso claro, documentado y transparente.</li>
+          <li class="benefits-item"><span class="benefits-check">✓</span>Asesoría profesional durante todo el proceso.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="success-cases" aria-label="Casos de éxito de Avanza Nexa">
+    <h3 class="success-title">Nuestros casos de éxito</h3>
+    <div class="success-grid">
+      <article class="success-card">
+        <figure class="success-card-visual">
+          <img src="./template-caso-exito-casa.svg" alt="Casa vendida por Avanza Nexa" />
+        </figure>
+        <div class="success-card-body">
+          <h4>Cierre en tiempo récord</h4>
+          <p>Formalizamos la compra de esta propiedad con un proceso ágil y seguro.</p>
+        </div>
+      </article>
+
+      <article class="success-card">
+        <figure class="success-card-visual">
+          <img src="./template-caso-exito-casa.svg" alt="Segundo caso de casa vendida" />
+        </figure>
+        <div class="success-card-body">
+          <h4>Oferta competitiva</h4>
+          <p>El propietario obtuvo una propuesta clara y condiciones favorables desde el inicio.</p>
+        </div>
+      </article>
+
+      <article class="success-card">
+        <figure class="success-card-visual">
+          <img src="./template-caso-exito-casa.svg" alt="Tercer caso de casa vendida" />
+        </figure>
+        <div class="success-card-body">
+          <h4>Proceso sin fricciones</h4>
+          <p>Acompañamos cada etapa para asegurar una operación transparente y eficiente.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="clients-trust" aria-label="Clientes que confían en nosotros">
+    <h3 class="clients-title">Clientes que confían en nosotros</h3>
+    <div class="clients-grid">
+      <article class="client-card">
+        <div class="client-head">
+          <span class="client-avatar">
+            <img src="./template-cliente-avatar-1.svg" alt="Foto de cliente Armando Montañas" />
+          </span>
+          <div>
+            <h4 class="client-name">Armando Montañas</h4>
+            <p class="client-city">León, Guanajuato</p>
+          </div>
+        </div>
+        <strong class="client-badge">Cliente verificado</strong>
+        <p class="client-text">Recibí una oferta clara y un acompañamiento constante hasta el cierre de la operación.</p>
+      </article>
+
+      <article class="client-card">
+        <div class="client-head">
+          <span class="client-avatar">
+            <img src="./template-cliente-avatar-2.svg" alt="Avatar de cliente Armando Montañas" />
+          </span>
+          <div>
+            <h4 class="client-name">Mariana Torres</h4>
+            <p class="client-city">León, Guanajuato</p>
+          </div>
+        </div>
+        <strong class="client-badge">Cliente verificado</strong>
+        <p class="client-text">El proceso fue profesional, transparente y con tiempos de respuesta muy rápidos.</p>
+      </article>
+
+      <article class="client-card">
+        <div class="client-head">
+          <span class="client-avatar">
+            <img src="./template-cliente-avatar-2.svg" alt="Avatar alternativo de cliente verificado" />
+          </span>
+          <div>
+            <h4 class="client-name">Carlos Herrera</h4>
+            <p class="client-city">León, Guanajuato</p>
+          </div>
+        </div>
+        <strong class="client-badge">Cliente verificado</strong>
+        <p class="client-text">Me sentí respaldado en todo momento; la gestión fue ordenada y sin contratiempos.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer" aria-label="Pie de página">
+    <div class="footer-card">
+      <div class="footer-columns">
+        <nav aria-label="Footer vende">
+          <h4 class="footer-title">Vende</h4>
+          <ul class="footer-links">
+            <li><a href="#">Agenda una cita</a></li>
+            <li><a href="#">Solicita una cotización</a></li>
+            <li><a href="#">Publica tu inmueble</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Footer compra">
+          <h4 class="footer-title">Compra</h4>
+          <ul class="footer-links">
+            <li><a href="#">Explorar propiedades</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Footer avanza">
+          <h4 class="footer-title">Avanza</h4>
+          <ul class="footer-links">
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Nuestro equipo</a></li>
+            <li><a href="#">Blog ↗</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Footer legal">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Aviso de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-help">
+          <h4 class="footer-title">Ayuda</h4>
+          <p>Preguntas frecuentes</p>
+          <p>Soporte</p>
+          <p>Horarios de atención ↗</p>
+          <p class="strong">Atención por WhatsApp</p>
+          <p class="muted">Lunes a sábado, 24 horas</p>
+          <p>◔ 477 893 8183</p>
+          <p class="strong">Dirección de oficinas</p>
+          <p class="muted">Calle 5 de Febrero, Núm. 424B,<br />Centro, León, Guanajuato.</p>
+        </div>
+      </div>
+
+      <div class="footer-logo-wrap">
+        <img class="footer-logo" src="./template-footer-logo-avanza.svg" alt="Logo Avanza tecnología inmobiliaria" />
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
