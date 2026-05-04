@@ -7,21 +7,33 @@
     :root {
       --color-bg: #f2f6fd;
       --color-surface: #ffffff;
-      --color-text: #2d2d2d;
-      --color-muted: #666666;
+      --color-text: #2e2421;
+      --color-muted: #5f5f5f;
+      --color-caption: #8a8a8a;
       --color-line: #dbe5f4;
-      --color-brand: #a67d3d;
+      --color-brand: #b3833e;
       --color-brand-dark: #4b2516;
       --color-secondary: #24496f;
       --color-secondary-dark: #162c45;
       --color-bg-accent: #dce8fb;
       --color-bg-strong: #3f5dcc;
+      --text-h1: clamp(2.5rem, 3.5vw, 2.75rem);
+      --text-h2: clamp(1.75rem, 2.6vw, 2rem);
+      --text-h3: clamp(1.125rem, 1.55vw, 1.25rem);
+      --text-body: 0.9375rem;
+      --text-caption: 0.8125rem;
+      --lh-h1: 1.2;
+      --lh-h2: 1.3;
+      --lh-h3: 1.38;
+      --lh-body: 1.6;
+      --lh-caption: 1.4;
     }
 
     body {
       font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: var(--color-bg);
       color: var(--color-text);
+      font-size: var(--text-body);
       min-height: 100vh;
     }
 
@@ -88,15 +100,15 @@
 
     .brand-name {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: 1.65rem;
-      line-height: 1;
+      font-size: var(--text-h3);
+      line-height: var(--lh-h3);
       font-weight: 700;
       letter-spacing: 0.02em;
       color: #9d7b3c;
     }
 
     .brand-tagline {
-      font-size: 0.66rem;
+      font-size: 0.75rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--color-muted);
@@ -113,7 +125,7 @@
     .nav-link {
       position: relative;
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: 1rem;
+      font-size: var(--text-body);
       font-weight: 700;
       color: var(--color-text);
       padding: 0.4rem 0;
@@ -150,7 +162,7 @@
       border-radius: 999px;
       background: var(--color-brand);
       color: #fff;
-      font-size: 0.95rem;
+      font-size: var(--text-caption);
       font-weight: 500;
       transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
       box-shadow: 0 10px 24px rgba(166, 125, 61, 0.22);
@@ -189,11 +201,11 @@
 
     .hero h1 {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: clamp(2rem, 3vw, 2.75rem);
+      font-size: var(--text-h1);
       margin-bottom: 0.5rem;
       font-weight: 700;
       letter-spacing: 0;
-      line-height: 1.05;
+      line-height: var(--lh-h1);
       max-width: 12ch;
       color: var(--color-text);
     }
@@ -208,7 +220,8 @@
     p {
       font-family: "Roboto", sans-serif;
       color: var(--color-muted);
-      line-height: 1.7;
+      font-size: var(--text-body);
+      line-height: var(--lh-body);
       max-width: 60ch;
       margin-bottom: 1.75rem;
     }
@@ -216,8 +229,8 @@
     .hero-note {
       margin: 0 0 0.75rem;
       color: var(--color-secondary);
-      font-size: 0.72rem;
-      line-height: 1.3;
+      font-size: var(--text-caption);
+      line-height: var(--lh-caption);
       font-weight: 500;
     }
 
@@ -225,8 +238,8 @@
       margin: 0 0 0.9rem;
       color: var(--color-text);
       max-width: 34rem;
-      line-height: 1.5;
-      font-size: 1rem;
+      line-height: var(--lh-body);
+      font-size: var(--text-body);
     }
 
     .hero-offer-form {
@@ -322,8 +335,8 @@
       color: var(--color-secondary-dark);
       display: grid;
       gap: 0.15rem;
-      font-size: 0.92rem;
-      line-height: 1.42;
+      font-size: var(--text-body);
+      line-height: var(--lh-body);
       text-align: left;
       backdrop-filter: blur(12px);
     }
@@ -343,18 +356,18 @@
     .hero-success-label {
       color: var(--color-brand);
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: 0.76rem;
-      font-weight: 700;
+      font-size: var(--text-caption);
+      font-weight: 600;
       letter-spacing: 0;
-      line-height: 1;
+      line-height: var(--lh-caption);
       text-transform: uppercase;
     }
 
     .hero-success-modal strong {
       color: var(--color-secondary-dark);
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: 1.2rem;
-      line-height: 1.05;
+      font-size: var(--text-h3);
+      line-height: var(--lh-h3);
     }
 
     .hero-success-modal span:last-child {
@@ -374,7 +387,7 @@
       border: 1px solid var(--color-brand);
       background: var(--color-brand);
       color: #fff;
-      font-size: 0.95rem;
+      font-size: var(--text-caption);
       font-weight: 500;
       text-decoration: none;
       cursor: pointer;
@@ -441,9 +454,9 @@
     .sell-process-kicker {
       margin: 0 auto 0.55rem;
       color: var(--color-brand);
-      font-size: clamp(0.82rem, 1.3vw, 0.98rem);
-      font-weight: 700;
-      line-height: 1.3;
+      font-size: var(--text-caption);
+      font-weight: 600;
+      line-height: var(--lh-caption);
       text-transform: uppercase;
       letter-spacing: 0;
       max-width: 58rem;
@@ -451,8 +464,8 @@
 
     .sell-process-title {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: clamp(1.35rem, 2.2vw, 2rem);
-      line-height: 0.98;
+      font-size: var(--text-h2);
+      line-height: var(--lh-h2);
       letter-spacing: 0;
       margin: 0 0 0.45rem;
       text-align: center;
@@ -574,13 +587,13 @@
       grid-row: 3;
       margin: -1.45rem 0 0;
       color: var(--color-secondary);
-      font-size: 0.95rem;
-      line-height: 1.5;
+      font-size: var(--text-body);
+      line-height: var(--lh-body);
       max-width: 38rem;
     }
 
     .sell-content > p {
-      font-size: 1.02rem;
+      font-size: var(--text-body);
       color: var(--color-muted);
       max-width: 42ch;
       margin-bottom: 1.4rem;
@@ -632,8 +645,8 @@
 
     .process-title {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: 1.36rem;
-      line-height: 1.08;
+      font-size: var(--text-h3);
+      line-height: var(--lh-h3);
       color: var(--color-text);
     }
 
@@ -694,9 +707,9 @@
 
     .contact-intro h3 {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: clamp(2.15rem, 3.7vw, 3.25rem);
+      font-size: var(--text-h2);
       font-weight: 700;
-      line-height: 1;
+      line-height: var(--lh-h2);
       letter-spacing: 0;
       color: var(--color-text);
       margin-bottom: 1.25rem;
@@ -706,8 +719,8 @@
       color: var(--color-muted);
       margin: 0;
       max-width: 28ch;
-      line-height: 1.4;
-      font-size: 1.05rem;
+      line-height: var(--lh-body);
+      font-size: var(--text-body);
     }
 
     .contact-direct-card {
@@ -728,8 +741,8 @@
 
     .contact-direct-card h4 {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: 0.95rem;
-      line-height: 1;
+      font-size: var(--text-caption);
+      line-height: var(--lh-caption);
       color: rgba(31, 75, 116, 0.82);
       letter-spacing: 0.04em;
       margin: 0;
@@ -776,8 +789,8 @@
     .contact-hours {
       color: var(--color-text);
       margin-bottom: 0;
-      line-height: 1.45;
-      font-size: 0.86rem;
+      line-height: var(--lh-caption);
+      font-size: var(--text-caption);
     }
 
     .contact-hours strong,
@@ -788,7 +801,7 @@
     .contact-hours strong {
       font-weight: 700;
       color: var(--color-text);
-      font-size: 0.9rem;
+      font-size: var(--text-caption);
       margin-bottom: 0.15rem;
     }
 
@@ -801,7 +814,7 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      font-size: 0.88rem;
+      font-size: var(--text-caption);
       color: var(--color-muted);
       margin: 0;
     }
@@ -810,8 +823,8 @@
       color: var(--color-text);
       font-weight: 800;
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: clamp(1.85rem, 2.7vw, 2.45rem);
-      line-height: 1;
+      font-size: var(--text-h2);
+      line-height: var(--lh-h2);
       margin-bottom: 0.35rem;
     }
 
@@ -826,8 +839,8 @@
     .contact-social-copy {
       margin: 0;
       color: var(--color-muted);
-      line-height: 1.45;
-      font-size: 0.7rem;
+      line-height: var(--lh-caption);
+      font-size: 0.75rem;
       opacity: 0.72;
     }
 
@@ -847,7 +860,7 @@
       border-radius: 999px;
       border: 1px solid var(--color-brand);
       color: #fff;
-      font-size: 0.9rem;
+      font-size: var(--text-caption);
       font-weight: 700;
       background: var(--color-brand);
       box-shadow: 0 12px 26px rgba(166, 125, 61, 0.22);
@@ -864,7 +877,7 @@
       border-radius: 999px;
       border: 1px solid rgba(93, 139, 186, 0.36);
       color: rgba(31, 75, 116, 0.86);
-      font-size: 0.9rem;
+      font-size: var(--text-caption);
       font-weight: 700;
       background: rgba(255, 255, 255, 0.34);
       text-decoration: none;
@@ -978,8 +991,8 @@
       border-radius: 999px;
       background: var(--color-brand);
       color: #fff;
-      font-size: 0.78rem;
-      font-weight: 700;
+      font-size: var(--text-caption);
+      font-weight: 600;
       box-shadow: 0 10px 22px rgba(22, 44, 69, 0.18);
     }
 
@@ -993,8 +1006,9 @@
 
     .service-body h4 {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: clamp(1.65rem, 2.5vw, 2rem);
-      line-height: 1.02;
+      font-size: var(--text-h3);
+      font-weight: 600;
+      line-height: var(--lh-h3);
       color: #2f2420;
     }
 
@@ -1002,7 +1016,8 @@
       margin: 0;
       max-width: 32ch;
       color: #4f4742;
-      line-height: 1.45;
+      font-size: var(--text-body);
+      line-height: var(--lh-body);
       min-height: 3.25rem;
     }
 
@@ -1018,7 +1033,7 @@
       border: 1px solid #9a7a46;
       background: #ad8a50;
       color: #fff;
-      font-size: 0.88rem;
+      font-size: var(--text-caption);
       font-weight: 700;
       text-decoration: none;
       transition: background 0.2s ease;
@@ -1065,19 +1080,19 @@
       display: inline-flex;
       margin-bottom: 0.7rem;
       color: var(--color-brand);
-      font-size: 0.82rem;
-      font-weight: 700;
-      line-height: 1;
+      font-size: var(--text-caption);
+      font-weight: 600;
+      line-height: var(--lh-caption);
       text-transform: uppercase;
     }
 
     .benefits-content h3 {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: clamp(2.15rem, 3.7vw, 3.3rem);
-      line-height: 1;
+      font-size: var(--text-h2);
+      line-height: var(--lh-h2);
       letter-spacing: 0;
       color: #2d221e;
-      max-width: 15ch;
+      max-width: 18ch;
       margin-bottom: 1.05rem;
     }
 
@@ -1085,13 +1100,14 @@
       margin: 0 0 0.65rem;
       color: #4f4540;
       max-width: 42ch;
-      line-height: 1.55;
-      font-size: 0.96rem;
+      line-height: var(--lh-body);
+      font-size: var(--text-body);
     }
 
     .benefits-trust {
       color: var(--color-secondary);
       font-weight: 700;
+      font-size: var(--text-caption);
       margin-bottom: 1.45rem;
     }
 
@@ -1108,6 +1124,7 @@
       gap: 0.6rem;
       color: #352b26;
       font-weight: 700;
+      font-size: var(--text-body);
       min-height: 3.05rem;
       padding: 0.62rem 0.72rem;
       border-radius: 0.75rem;
@@ -1143,7 +1160,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 999px;
-      font-size: 0.95rem;
+      font-size: var(--text-caption);
       font-weight: 700;
       text-decoration: none;
     }
@@ -1170,24 +1187,35 @@
 
     .success-cases {
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 2rem auto 0;
       width: 100%;
       padding: 0 2rem 5rem;
     }
 
     .success-title {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: clamp(2.3rem, 4.1vw, 4rem);
-      line-height: 1;
+      font-size: clamp(1.8rem, 2.45vw, 2rem);
+      font-weight: 600;
+      line-height: var(--lh-h2);
       text-align: center;
       color: #2f2320;
-      margin-bottom: 1.6rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .success-subtitle {
+      color: #67615d;
+      font-size: var(--text-body);
+      line-height: var(--lh-body);
+      margin: 0 auto 1.2rem;
+      max-width: 43rem;
+      text-align: center;
     }
 
     .success-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: clamp(1.5rem, 2.6vw, 2rem);
+      grid-template-columns: repeat(3, minmax(0, 18.4rem));
+      gap: clamp(1.7rem, 3vw, 2.25rem);
+      justify-content: center;
     }
 
     .success-card {
@@ -1197,7 +1225,7 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      min-height: 100%;
+      min-height: 17.2rem;
       box-shadow: 0 14px 34px rgba(22, 44, 69, 0.08);
       transition: box-shadow 180ms ease, transform 180ms ease;
     }
@@ -1208,7 +1236,7 @@
     }
 
     .success-card-visual {
-      aspect-ratio: 16 / 7;
+      aspect-ratio: 4 / 2.25;
       overflow: hidden;
       margin: 0;
     }
@@ -1226,34 +1254,35 @@
     }
 
     .success-card-body {
-      padding: 1.35rem 1.3rem 1.45rem;
+      padding: 1.32rem 1.3rem 1.45rem;
       display: grid;
-      gap: 0.7rem;
+      gap: 0.72rem;
       flex: 1;
       align-content: start;
     }
 
     .success-case-label {
-      color: #9a7a44;
-      font-size: 0.72rem;
-      font-weight: 800;
+      color: rgba(154, 122, 68, 0.78);
+      font-size: 0.7rem;
+      font-weight: 600;
       letter-spacing: 0.08em;
-      line-height: 1;
+      line-height: var(--lh-caption);
       text-transform: uppercase;
     }
 
     .success-card-body h4 {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: clamp(1.55rem, 2.1vw, 1.9rem);
-      line-height: 1.05;
+      font-size: clamp(1.05rem, 1.35vw, 1.15rem);
+      font-weight: 600;
+      line-height: var(--lh-h3);
       color: #2f2420;
     }
 
     .success-card-body p {
       margin: 0;
-      color: #4f4742;
-      line-height: 1.45;
-      font-size: 0.95rem;
+      color: #68625e;
+      line-height: var(--lh-body);
+      font-size: 0.9rem;
       max-width: 33ch;
     }
 
@@ -1295,22 +1324,22 @@
 
     .clients-trust .success-card h4 {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: clamp(1.25rem, 1.7vw, 1.45rem);
+      font-size: var(--text-h3);
       font-weight: 700;
-      line-height: 1.05;
+      line-height: var(--lh-h3);
       color: #352d29;
       margin: 0 0 0.1rem;
     }
 
     .success-time {
-      color: var(--color-muted);
-      font-size: 0.84rem;
-      line-height: 1;
+      color: var(--color-caption);
+      font-size: var(--text-caption);
+      line-height: var(--lh-caption);
     }
 
     .success-stars {
       color: #f1b13e;
-      font-size: 0.86rem;
+      font-size: 0.875rem;
       letter-spacing: 0.04em;
       line-height: 1;
     }
@@ -1319,18 +1348,18 @@
       background: #f2eadf;
       border-radius: 999px;
       color: #8a642b;
-      font-size: 0.76rem;
-      font-weight: 800;
+      font-size: 0.75rem;
+      font-weight: 600;
       line-height: 1;
-      padding: 0.4rem 0.65rem;
+      padding: 0.25rem 0.5rem;
       width: fit-content;
     }
 
     .clients-trust .success-card p {
       margin: 0;
       color: #5b5652;
-      line-height: 1.45;
-      font-size: 0.92rem;
+      line-height: var(--lh-body);
+      font-size: var(--text-body);
       max-width: 36ch;
     }
 
@@ -1343,9 +1372,9 @@
 
     .clients-title {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: clamp(2.05rem, 3.7vw, 3.55rem);
+      font-size: var(--text-h2);
       font-weight: 700;
-      line-height: 1;
+      line-height: var(--lh-h2);
       text-align: center;
       color: #2f2320;
       margin-bottom: 0.75rem;
@@ -1353,8 +1382,8 @@
 
     .clients-subtitle {
       color: #5b5652;
-      font-size: 1rem;
-      line-height: 1.5;
+      font-size: var(--text-body);
+      line-height: var(--lh-body);
       margin: 0 auto 1.8rem;
       max-width: 48rem;
       text-align: center;
@@ -1396,8 +1425,8 @@
 
     .footer-title {
       font-family: "Roboto Condensed", "Roboto", sans-serif;
-      font-size: 0.88rem;
-      line-height: 1;
+      font-size: var(--text-caption);
+      line-height: var(--lh-caption);
       color: var(--color-brand-dark);
       letter-spacing: 0.04em;
       margin-bottom: 0.7rem;
@@ -1407,8 +1436,8 @@
     .footer-brand p,
     .footer-contact p {
       color: #514743;
-      font-size: 0.95rem;
-      line-height: 1.45;
+      font-size: var(--text-body);
+      line-height: var(--lh-body);
       margin: 0;
     }
 
@@ -1426,8 +1455,8 @@
 
     .footer-links a {
       color: #342a25;
-      font-size: 0.95rem;
-      line-height: 1.35;
+      font-size: var(--text-body);
+      line-height: var(--lh-body);
     }
 
     .footer-links a:hover {
@@ -1459,8 +1488,8 @@
     .footer-bottom p,
     .footer-legal-links {
       color: #514743;
-      font-size: 0.88rem;
-      line-height: 1.4;
+      font-size: var(--text-caption);
+      line-height: var(--lh-caption);
       margin: 0;
     }
 
@@ -1577,7 +1606,7 @@
       }
 
       .brand-name {
-        font-size: 1.35rem;
+        font-size: var(--text-h3);
       }
 
       .brand-logo {
@@ -1593,11 +1622,11 @@
         width: 100%;
         margin-top: 0;
         padding: 0.85rem 1rem 0.9rem 1.15rem;
-        font-size: 0.88rem;
+        font-size: var(--text-body);
       }
 
       .hero-success-modal strong {
-        font-size: 1.05rem;
+        font-size: var(--text-h3);
       }
 
       .coverage-visual {
@@ -1643,8 +1672,8 @@
         padding: 1.6rem 1.2rem;
       }
 
-      .process-text strong {
-        font-size: 1.55rem;
+      .process-title {
+        font-size: var(--text-h3);
       }
 
       .contact-band-card {
