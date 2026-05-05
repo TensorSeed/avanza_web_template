@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compra | Avanza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./index.html" aria-label="Avanza">
+        <img class="brand-logo" src="./logo-avanza-prueba.svg" alt="Avanza Tecnologia Inmobiliaria" />
+      </a>
+
+      <nav class="main-nav" aria-label="Navegacion principal">
+        <a class="nav-link" href="./index.html">Vende</a>
+        <a class="nav-link is-active" href="./compra.html">Compra</a>
+        <a class="nav-link" href="#">Cotiza</a>
+        <a class="nav-link" href="#">¿Quiénes somos?</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="login-btn" href="#">Inicia sesión</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="buy-page" aria-label="Contenido de compra">
+    <aside class="buy-sidebar" aria-label="Filtros de compra">
+      <header class="buy-filter-title">
+        <span>Filtros</span>
+        <strong>Encuentra tu propiedad</strong>
+      </header>
+
+      <section class="buy-filter-section">
+        <button class="buy-filter-toggle" type="button" aria-expanded="true">Estructura</button>
+        <label class="buy-field">
+          <span>Tipo de propiedad</span>
+          <select>
+            <option>Casa</option>
+            <option>Departamento</option>
+            <option>Terreno</option>
+          </select>
+        </label>
+        <div class="buy-filter-grid">
+          <label class="buy-field">
+            <span>Terreno m²</span>
+            <input type="number" placeholder="120" />
+          </label>
+          <label class="buy-field">
+            <span>Construcción m²</span>
+            <input type="number" placeholder="90" />
+          </label>
+        </div>
+        <div class="buy-filter-options">
+          <label><input type="checkbox" /> 2+ habitaciones</label>
+          <label><input type="checkbox" /> 2+ baños</label>
+          <label><input type="checkbox" /> Cochera</label>
+          <label><input type="checkbox" /> Patio</label>
+        </div>
+      </section>
+
+      <section class="buy-filter-section">
+        <button class="buy-filter-toggle" type="button" aria-expanded="true">Calidad</button>
+        <div class="buy-filter-options">
+          <label><input type="checkbox" /> Construcción alta</label>
+          <label><input type="checkbox" /> Buen estado</label>
+          <label><input type="checkbox" /> Acabados estándar</label>
+          <label><input type="checkbox" /> Equipamiento completo</label>
+        </div>
+      </section>
+
+      <section class="buy-filter-section">
+        <button class="buy-filter-toggle" type="button">Ubicación</button>
+        <label class="buy-field">
+          <span>Ciudad / zona</span>
+          <input type="text" placeholder="León, Guanajuato" />
+        </label>
+        <div class="buy-filter-options">
+          <label><input type="checkbox" /> Colonia con buen funcionamiento</label>
+          <label><input type="checkbox" /> Código postal disponible</label>
+        </div>
+      </section>
+
+      <section class="buy-filter-section">
+        <button class="buy-filter-toggle" type="button">Documentación</button>
+        <div class="buy-filter-options">
+          <label><input type="checkbox" /> Escritura o contrato</label>
+          <label><input type="checkbox" /> Predial al corriente</label>
+          <label><input type="checkbox" /> Servicios al corriente</label>
+          <label><input type="checkbox" /> Libre de gravamen</label>
+        </div>
+      </section>
+
+      <section class="buy-filter-section">
+        <button class="buy-filter-toggle" type="button" aria-expanded="true">Venta</button>
+        <div class="buy-filter-grid">
+          <label class="buy-field">
+            <span>Precio mínimo</span>
+            <input type="number" placeholder="$1,500,000" />
+          </label>
+          <label class="buy-field">
+            <span>Precio máximo</span>
+            <input type="number" placeholder="$3,500,000" />
+          </label>
+        </div>
+        <div class="buy-filter-options">
+          <label><input type="checkbox" /> Crédito</label>
+          <label><input type="checkbox" /> Pago contado</label>
+          <label><input type="checkbox" /> Disponible</label>
+          <label><input type="checkbox" /> Apartada</label>
+        </div>
+      </section>
+
+      <div class="buy-filter-actions">
+        <button type="button">Limpiar</button>
+        <button type="button">Aplicar</button>
+      </div>
+    </aside>
+    <section class="buy-content" aria-label="Listado de propiedades">
+      <div class="property-grid">
+        <article class="property-card">
+          <figure class="property-card-media">
+            <img src="./template-servicio-compra.jpg" alt="Casa en venta en León" />
+          </figure>
+          <div class="property-card-body">
+            <div class="property-card-meta">
+              <span>Casa</span>
+              <strong>$2,850,000 MXN</strong>
+            </div>
+            <h2>Casa familiar en zona norte</h2>
+            <p>León, Guanajuato</p>
+            <ul class="property-card-features" aria-label="Características">
+              <li>3 recámaras</li>
+              <li>2 baños</li>
+              <li>180 m²</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <figure class="property-card-media">
+            <img src="./template-servicio-vende.jpg" alt="Casa moderna con acceso privado" />
+          </figure>
+          <div class="property-card-body">
+            <div class="property-card-meta">
+              <span>Residencial</span>
+              <strong>$3,420,000 MXN</strong>
+            </div>
+            <h2>Residencia con espacios abiertos</h2>
+            <p>Campestre, León</p>
+            <ul class="property-card-features" aria-label="Características">
+              <li>4 recámaras</li>
+              <li>3 baños</li>
+              <li>240 m²</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <figure class="property-card-media">
+            <img src="./template-servicio-invierte.jpg" alt="Departamento para inversión" />
+          </figure>
+          <div class="property-card-body">
+            <div class="property-card-meta">
+              <span>Departamento</span>
+              <strong>$1,980,000 MXN</strong>
+            </div>
+            <h2>Departamento listo para habitar</h2>
+            <p>Centro, León</p>
+            <ul class="property-card-features" aria-label="Características">
+              <li>2 recámaras</li>
+              <li>2 baños</li>
+              <li>96 m²</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.querySelectorAll(".buy-filter-toggle").forEach((toggle) => {
+      if (!toggle.hasAttribute("aria-expanded")) {
+        toggle.setAttribute("aria-expanded", "true");
+      }
+
+      toggle.addEventListener("click", () => {
+        const section = toggle.closest(".buy-filter-section");
+        const isCollapsed = section.classList.toggle("is-collapsed");
+        toggle.setAttribute("aria-expanded", String(!isCollapsed));
+      });
+    });
+  </script>
+</body>
+</html>
