@@ -195,7 +195,7 @@
     }
 
     .buy-sidebar {
-      min-height: calc(100vh - 4.5rem);
+      height: calc(100vh - 4.5rem);
       border-right: 1px solid #e2e0dc;
       background: #ffffff;
       padding: 1.2rem 1rem;
@@ -203,6 +203,8 @@
       align-content: start;
       gap: 0.85rem;
       overflow: auto;
+      position: sticky;
+      top: 4.5rem;
     }
 
     .buy-filter-title {
@@ -2136,10 +2138,12 @@
       }
 
       .buy-sidebar {
+        height: auto;
         min-height: auto;
         border-right: 0;
         border-bottom: 1px solid #e2e0dc;
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        position: static;
       }
 
       .buy-filter-title,
